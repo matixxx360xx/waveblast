@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>waveblast</title>
-</head>
+    <title>Waveblast Arena</title> </head>
 <body>
-    
-
-   
-<div class="arena-wrapper"> 
-     <div class="equipment"></div>
-    <div class="Arena">
-        <div class="Player" id="Player">Player</div>
+    <div class="game-container"> 
+        <div class="equipment-panel" id="equipment"> 
+            <h2 class="panel-header">Wyposażenie</h2>
+        </div>
+        
+        <div class="arena-wrapper"> 
+            <div class="Arena" id="Arena">
+                <div class="Player" id="Player">
+                    <span class="player-label">BOHATER</span> </div>
+            </div>
+        </div>
     </div>
-</div>
-    <script src="script.js"></script>
+    
+    <script src="script/playerMovement.js"></script>
+    <script src="script/inventory.js"></script>
 </body>
 </html>

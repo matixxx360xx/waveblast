@@ -11,7 +11,7 @@ const keys = {
     d: false
 };
 
-// 1. Nasłuchiwanie na wciśnięcie klawisza (keydown)
+// Nasłuchiwanie na wciśnięcie klawisza (keydown)
 document.addEventListener('keydown', (event) => {
     const key = event.key.toLowerCase();
     if (keys.hasOwnProperty(key)) {
@@ -20,7 +20,7 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-// 2. Nasłuchiwanie na zwolnienie klawisza (keyup)
+// Nasłuchiwanie na zwolnienie klawisza (keyup)
 document.addEventListener('keyup', (event) => {
     const key = event.key.toLowerCase();
     if (keys.hasOwnProperty(key)) {
@@ -28,7 +28,7 @@ document.addEventListener('keyup', (event) => {
     }
 });
 
-// 3. Główna pętla
+// Główna pętla
 function gameLoop() {
 
     let newPlayerX = playerX;
@@ -74,9 +74,8 @@ function gameLoop() {
     player.style.left = playerX + 'px';
     player.style.top = playerY + 'px';
 
-    //wywołanie tej funkcji ponownie przy następnym renderowaniu
+    // Wywołanie tej funkcji ponownie przy następnym renderowaniu
     requestAnimationFrame(gameLoop);
 }
-
 
 requestAnimationFrame(gameLoop);
