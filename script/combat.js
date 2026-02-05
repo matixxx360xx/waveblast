@@ -1,4 +1,4 @@
-import { weaponInventory ,  getWeapon} from "./inventory.js";
+import { getWeapon } from "./inventory.js";
 
 function WeaponDamage(){
 

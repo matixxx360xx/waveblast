@@ -1,6 +1,10 @@
 const player = document.getElementById('Player');
-let playerX = 550;
-let playerY = 330;
+
+export let playerX = 550;
+export let playerY = 330;
+export const HeightArena = 800;
+export const WidthArena = 1200;
+
 const speed = 5; 
 const playerSize = 90; 
 
@@ -46,9 +50,6 @@ function gameLoop() {
     if(keys.d){
         newPlayerX += speed;
     }
-
-    const HeightArena = 800;
-    const WidthArena = 1200;
 
     const minX = 0;
     const minY = 0;

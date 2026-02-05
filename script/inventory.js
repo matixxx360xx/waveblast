@@ -1,10 +1,10 @@
 import { attack } from "./combat.js";
 
 const equipment = document.getElementById("equipment");
-export let weaponInventory;
-export let weapon;
+let weaponInventory;
+let weapon;
 
-export function inventory(attackCallback) {
+function inventory(attackCallback) {
     weaponInventory = ["Miecz","Topór","Włócznia","Halabarda","Maczuga","Młot bojowy","Sztylet","Tasak","Rapier"];
 
     for (let i = 0; i < weaponInventory.length; i++) {
