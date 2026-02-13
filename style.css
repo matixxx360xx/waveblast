@@ -91,6 +91,8 @@ body{
     height: 800px;
     border-radius: 15px; 
     overflow: hidden; 
+    cursor:crosshair;
+     user-select: none;  
 }
 
 
